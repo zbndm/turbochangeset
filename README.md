@@ -45,6 +45,7 @@ git init . && git add . && git commit -m "Init"
 
 ### Changing the npm organization scope
 
+
 The npm organization scope for this design system starter is `@acme`. To change this, it's a bit manual at the moment, but you'll need to do the following:
 
 - Rename folders in `packages/*` to replace `acme` with your desired scope
