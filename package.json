@@ -8,7 +8,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    
+
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
@@ -19,5 +19,6 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
+  
   "packageManager": "pnpm@7.15.0"
 }
