@@ -1,5 +1,5 @@
 {
-  "name": "@acme/core",
+  "name": "@o6/utils",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,18 +12,18 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
+    "lint": "set TIMING=1 && eslint \"src/**/*.ts*\"",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@acme/tsconfig": "workspace:*",
+    "@o6/tsconfig": "workspace:*",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^17.0.18",
     "eslint": "^7.32.0",
-    "eslint-config-acme": "workspace:*",
-    "@types/react": "^17.0.13",
-    "@types/react-dom": "^17.0.8",
+    "eslint-config-o6": "workspace:*",
     "react": "^17.0.2",
-    "tsup": "^5.10.1",
-    "typescript": "^4.5.3"
+    "tsup": "^5.12.9",
+    "typescript": "^4.9.5"
   },
   "publishConfig": {
     "access": "public"

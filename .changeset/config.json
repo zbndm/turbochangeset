@@ -5,6 +5,12 @@
   "fixed": [],
   "linked": [],
   "access": "public",
+   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@acme/docs"]
+  
+    "snapshot": {
+    "useCalculatedVersion": true,
+    "prereleaseTemplate": "{tag}-{commit}"
+  },
+  "ignore": ["@o6/docs"]
 }

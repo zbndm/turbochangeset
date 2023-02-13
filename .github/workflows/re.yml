@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - m
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -11,11 +11,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-
-    environment: 
-      name: this
-      url: https://github.com/ka9an/denopendabot
-
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2

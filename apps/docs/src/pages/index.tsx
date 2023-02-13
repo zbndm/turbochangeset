@@ -1,13 +1,13 @@
-import { Button } from "@acme/core";
-import { useIsomorphicLayoutEffect } from "@acme/utils";
+import { Button } from "@o6/core";
+import { useIsomorphicLayoutEffect } from "@o6/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    console.log("Acme docs page");
+    console.log("o6 docs page");
   }, []);
   return (
     <div>
-      <h1>Acme Documentation</h1>
+      <h1>o6 Documentation</h1>
       <Button>Click me</Button>
     </div>
   );
