@@ -4,7 +4,8 @@ This is an official React design system starter powered by Turborepo. Versioning
 
 ## What's inside?
 
-This Turborepo includes the following:
+This Turborepo includes the following: 
+
 
 ### Apps and Packages
 
