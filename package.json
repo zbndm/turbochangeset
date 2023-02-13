@@ -6,9 +6,9 @@
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset version",
-    "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "turbo run build --filter=docs^... && changeset version && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "latest",
