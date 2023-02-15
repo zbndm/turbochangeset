@@ -8,4 +8,4 @@ export function Button(props: ButtonProps) {
   return <button>{props.children}</button>;
 }
 
-Button.displayName = "ButtoN";
+Button.displayName = "ButtN";
