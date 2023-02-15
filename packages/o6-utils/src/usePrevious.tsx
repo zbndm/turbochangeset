@@ -10,7 +10,7 @@ function usePrevious<T>(value: T) {
     ref.current = value;
   }, [value]); // Only re-run if value changes
 
-  // Return previous value (happens before update in useEffect above)
+  // Return previous value (happens before update in useEffect abo
   return ref.current;
 }
 
