@@ -9,7 +9,8 @@
     "changeset": "changeset",
     "re": "turbo run build --filter=docs^...",
     "release": "turbo run build --filter=docs^... && changeset publish",
-    "ci:publish": "pnpm publish -r"
+    "ci:version": "changeset version && pnpm i --no-frozen-lockfile && git add .",
+    "rel": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "latest",
