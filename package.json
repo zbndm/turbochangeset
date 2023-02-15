@@ -7,7 +7,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "ci:version": "changeset version",
+    "re": "turbo run build --filter=docs^...",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "ci:publish": "pnpm publish -r"
   },
